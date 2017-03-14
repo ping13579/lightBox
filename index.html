@@ -1,0 +1,48 @@
+<!DOCITYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>lightBox 插件开发</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!--遮罩层-->
+    <!--<div id="G-lightbox-mask">-->
+
+    <!--</div>-->
+    <!--&lt;!&ndash;弹出层&ndash;&gt;-->
+    <!--<div id="G-lightbox-popup">-->
+        <!--<div class="lightbox-pic-view">-->
+            <!--<span class="lightbox-btn lightbox-prev-btn lightbox-prev-btn-show"></span>-->
+            <!--<img class="lightbox-image" src="./img/xbjz1.png">-->
+            <!--<span class="lightbox-btn lightbox-next-btn lightbox-next-btn-show"></span>-->
+        <!--</div>-->
+        <!--<div class="lightbox-pic-caption">-->
+            <!--<div class="lightbox-caption-area">-->
+                <!--<p class="lightbox-pic-desc">图片标题</p>-->
+                <!--<span class="lightbox-of-index">当前索引：1 of 4 </span>-->
+            <!--</div>-->
+            <!--<span class="lightbox-close-btn"></span>-->
+        <!--</div>-->
+    <!--</div>-->
+<h1>1组图片</h1>
+<div class="">
+    <img class="js-lightbox" data-caption="标题标题2。。" data-id = '123' data-group = 'group-1' data-role="lightbox" data-source="img/xbjz2.png" src="img/xbjz2.png">
+    <img class="js-lightbox" data-caption="标题标题3。。" data-id = '345' data-group = 'group-1' data-role="lightbox" data-source="img/xbjz3.png" src="img/xbjz3.png">
+    <img class="js-lightbox" data-caption="标题标题4。。" data-id = '456' data-group = 'group-1' data-role="lightbox" data-source="img/xbjz4.png" src="img/xbjz4.png">
+    <img class="js-lightbox" data-caption="标题标题5。。" data-id = '567' data-group = 'group-1' data-role="lightbox" data-source="img/xbjz5.png" src="img/xbjz5.png">
+
+</div>
+</body>
+<script src="http://st.ufenqi.com/resources/app/js/jquery-1.11.1.min.js"></script>
+<script src="index.js"></script>
+<script>
+    $(function(){
+        var lightbox= new LightBox({
+            speed:'600',
+            maxWidth:900,
+            maxHeight:600
+        });
+    })
+</script>
+</html>
